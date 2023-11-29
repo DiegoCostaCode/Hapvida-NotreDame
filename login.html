@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheet/main.css">
+</head>
+
+<body class="body-login">
+
+    <header class="header-login">
+        <div class="logo-login">
+            <img src="image/logo-hapvida.png">
+        </div>
+    </header>
+
+    <div class="container-login">
+
+        <div class="header-seçãologin">
+            <H2>Que bom te ter por aqui, vamos começar seus cuidados?</H2>
+        </div>
+
+        <form id="form" class="formulario-cadastro">
+
+            <div class="form-control">
+
+                <label for="username">Nome completo</label>
+                <input type="text" id="username" placeholder="Digite seu nome completo">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="DataDeNascimento">Data de Nascimento</label>
+                <input type="text" id="data de nascimento" required placeholder="dd/mm/yyyy">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="CPF">CPF</label>
+                <input type="text" id="CPF" placeholder="Digite seu CPF"pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" required placeholder="(xx)xxxx-xxxx">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="Digite seu e-mail">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="password">Digite sua senha</label>
+                <input type="text" id="password" placeholder="Digte sua senha">
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <div class="form-control">
+
+                <label for="password-confirmation">Digite sua senha</label>
+                <input type="text" id="password-confirmation" placeholder="Digte sua senha novamente"> 
+                <i class="fa-solid fa-exclamation"></i>
+                <i class="fa-solid fa-check"></i>
+                <small>Mensagem de erro</small>
+
+            </div>
+
+            <button role="button" type="submit">Finalizar</button>
+
+    </div>
+    </section>
+    <script src="https://kit.fontawesome.com/f40577e3f5.js" crossorigin="anonymous"></script>
+</body>
+</html>

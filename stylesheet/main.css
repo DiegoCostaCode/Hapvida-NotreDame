@@ -4,6 +4,7 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body
@@ -12,6 +13,8 @@ body
     font-size: 62,5%;
     width: auto;
     background-color: white;
+    width: 100%;
+    min-height: 100vh;
 
 }
 
@@ -74,7 +77,7 @@ body > .header-home > .botoes-header
     border-radius: 50px;
     background-color: #F06F06 ;
     color:#ffff ;
-    padding: 12px;
+    padding: 10px 20px 10px 20px;
     white-space: nowrap;
 }
 
@@ -319,6 +322,114 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
 }
 
 
+/*//////////////////FIM DA HOME//////////////////*/
 
 
-/*//////////////////HOME//////////////////*/
+/*//////////////////LOGIN//////////////////*/
+
+/*//////////////////HEADER-LOGIN//////////////////*/
+
+.body-login
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.body-login > .header-login
+{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to right, #FAB216, #F06F06);
+    background-size: cover;
+    height: max-content;
+}
+
+.body-login > .header-login > .logo-login
+{
+    padding: 50px;
+    justify-content: center;
+}
+
+.body-login > .header-login > .logo-login > img
+{
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+/*//////////////////SEÇÃO LOGIN//////////////////*/
+
+.container-login
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.body-login > .container-login > .header-seçãologin
+{
+    color: #006EB6;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.body-login > .container-login > .formulario-cadastro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.body-login > .container-login > .formulario-cadastro > .form-control
+{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 300px;
+}
+
+.form-control > label
+{
+    display: inline-block;
+    margin-bottom: 1px;
+    color: #006EB6;
+}
+
+.form-control > input
+{
+    border: 2px solid #FAB216;
+    display: block;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control > i
+{
+    position: absolute;
+    top: 45px;
+    visibility: hidden;
+}
+
+.form-control > small
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.formulario-cadastro > button
+{
+    background-color: #006EB6 ;
+    border:none;
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
