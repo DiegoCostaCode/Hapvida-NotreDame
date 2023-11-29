@@ -1,0 +1,324 @@
+@import url(fonts.css);
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Outfit', sans-serif;
+    font-size: 62,5%;
+    width: auto;
+    background-color: white;
+
+}
+
+/*//////////////////HOME//////////////////*/
+
+/*/////////////////HEADER//////////////////*/
+
+.header-home
+{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 0px 10px 0px 10px;
+}
+
+.header-home .logo-home
+{
+    flex: 6;
+}
+
+body > .header-home > .botoes-header
+{
+    display: flex;
+    align-items: center;
+}
+
+.header-home img{
+    width: 250px;
+}
+
+.header-home > .botoes-header > .links-cabecalho
+{
+    flex:0.5;
+    text-align: center;
+}
+
+.header-home > .botoes-header > .links-cabecalho a
+{
+    list-style: none;
+    text-decoration: none;
+    font-weight:bolder;
+    color:#006EB6 ;
+    white-space: nowrap;
+    padding: 0px 10px 10px 0px;
+}
+
+.header-home > .botoes-header > .botao-login
+{
+    display: flex;
+    justify-content: center;
+    flex: 0.8;
+    
+}
+
+.header-home > .botoes-header > .botao-login a
+{
+    text-align: center;
+    font-weight:bolder;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #F06F06 ;
+    color:#ffff ;
+    padding: 12px;
+    white-space: nowrap;
+}
+
+/*/////////////////SECTION - APRESENTACAO//////////////////*/
+
+body > .apresentacao-proposta
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > .apresentacao-proposta > div
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+
+
+body > .apresentacao-proposta > div > .textos-apresentacao > .parte-azul
+{
+    color: #006EB6;
+    font-weight: bolder;
+    font-size: 3rem;
+    letter-spacing: 0rem;
+}
+
+body > .apresentacao-proposta > div > .textos-apresentacao > .parte-azul > .cor-amarela
+{
+    color: #FAB216;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+body > .apresentacao-proposta > div > .textos-apresentacao > .texto-informativo
+{
+    padding: 10px 0px 10px 0px;
+    color: #878787;
+}
+
+
+body > .apresentacao-proposta > .avatar-home
+{
+    flex: 0.1;
+}
+body > .apresentacao-proposta > .avatar-home > img
+{
+    width:400px;
+}
+
+body > .apresentacao-proposta > div > .botoes-homeApresentacao
+{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 20px 0px 20px 0px;
+}
+
+
+body > .apresentacao-proposta > div > .botoes-homeApresentacao > .botao-contrate > a
+{
+    text-align: center;
+    font-weight:bolder;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #F06F06 ;
+    color:#ffff ;
+    padding: 12px;
+    white-space: nowrap;
+    
+}
+
+body > .apresentacao-proposta > div > .botoes-homeApresentacao > .botao-guiaGestante > a
+{
+    text-align: center;
+    font-weight:bolder;
+    text-decoration: none;
+    border:2px solid #006EB6;
+    border-radius: 50px;
+    color:#006EB6;
+    padding: 12px;
+    white-space: nowrap;
+}
+
+
+/*/////////////////SECTION - SOBRE NOS//////////////////*/
+
+body > .sobre-nos
+{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    background:linear-gradient(to right, #FAB216, #F06F06);
+    background-size: cover;
+    box-shadow: 0px 0px 5px rgba(68, 65, 65, 0.5);
+
+}
+
+.sobre-nos > div
+{
+    flex: 0.5;
+    padding: 30px 30px 30px 30px;
+}
+
+
+body > .sobre-nos > div > h1
+{
+    align-items:left;
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 20px;
+}
+
+body > .sobre-nos > div > p
+{
+    font-size: 1.2rem;
+    color: white;
+    flex: 0.1;
+    width: auto;
+    text-shadow: 1px 1px 1px rgba(68, 65, 65, 0.5);
+}
+
+
+/*/////////////////FOOTER - HOME//////////////////*/
+
+body > footer > div > h1
+{
+    font-weight: bold;
+    color: #006EB6;
+    font-size: 3rem;
+}
+
+body > footer > div
+{
+    padding: 30px 30px 30px 30px;
+}
+
+
+body > footer > div > p
+{
+    color: #878787;
+    font-size: 1.2rem;
+}
+
+body > footer > div > .itens-suporte
+{
+    display: flex;
+    padding-top: 30px;
+}
+
+body > footer > div > .itens-suporte > .canais-de-atendimento
+{
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #F06F06;
+    padding-right: 30px;
+    border-right: 2px solid #F06F06;
+}
+
+body > footer > div > .itens-suporte > .canais-de-atendimento2
+{
+    list-style-type: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #F06F06;
+    margin-left: 40px;
+}
+
+/*//////////////////RESPONSIVIDADE//////////////////*/
+
+@media screen and (max-width: 920px)
+{
+    .header-home{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header-home > .logo-home > a > img
+    {
+        width: 300px;
+    }
+
+
+    body > .header-home > .botoes-header
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    body > .apresentacao-proposta
+    {
+        padding: 100px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    body > .apresentacao-proposta > div > .botoes-homeApresentacao
+    {
+       justify-content: center;
+    }
+
+    body > .apresentacao-proposta > .avatar-home > img
+    {
+        width: 300px;
+    }
+
+    body > footer > div > .itens-suporte
+    {
+        flex-direction: column;
+    }
+
+    body > footer > div > .itens-suporte > .canais-de-atendimento
+    {
+        padding-bottom: 20px;
+        border-right: none;
+    }
+
+    body > footer > div > .itens-suporte > .canais-de-atendimento2
+    {
+        margin-left: 0px;
+    }
+
+
+    
+}
+
+@media screen and (max-width: 630px)
+{
+    
+    body > .apresentacao-proposta > div > .botoes-homeApresentacao
+    {
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+
+    }
+    
+}
+
+
+
+
+/*//////////////////HOME//////////////////*/
