@@ -202,7 +202,7 @@ body > .sobre-nos > div > p
 }
 
 
-/*/////////////////FOOTER - HOME//////////////////*/
+/*/////////////////FOOTER//////////////////*/
 
 body > footer > div > h1
 {
@@ -226,6 +226,7 @@ body > footer > div > p
 body > footer > div > .itens-suporte
 {
     display: flex;
+    align-items: center;
     padding-top: 30px;
 }
 
@@ -246,8 +247,24 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
     font-weight: bold;
     color: #F06F06;
     margin-left: 40px;
+    margin-right: 40px;
 }
 
+body > footer > div > .itens-suporte > p
+{
+    color: #006EB6;
+    font-weight: bold;
+}
+
+body > footer > div > .itens-suporte > a
+{
+    font-weight: bold;
+    background-color: #006EB6;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
 /*//////////////////RESPONSIVIDADE//////////////////*/
 
 @media screen and (max-width: 920px)
@@ -325,7 +342,7 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
 /*//////////////////FIM DA HOME//////////////////*/
 
 
-/*//////////////////LOGIN//////////////////*/
+/*//////////////////cadastro//////////////////*/
 
 /*//////////////////HEADER-LOGIN//////////////////*/
 
@@ -350,7 +367,7 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
     justify-content: center;
 }
 
-.body-login > .header-login > .logo-login > img
+.body-login > .header-login > .logo-login >.logo > img
 {
     width: 300px;
     filter: brightness(0) invert(1);
@@ -408,20 +425,7 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
     padding: 10px;
 }
 
-.form-control > i
-{
-    position: absolute;
-    top: 45px;
-    visibility: hidden;
-}
 
-.form-control > small
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-}
 
 .formulario-cadastro > button
 {
@@ -431,31 +435,15 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 20px;
 }
-
-/*//////////////////SEÇÃO ERRORSS - LOGIN//////////////////*/
-
 
 /*//////////////////MOSTRAR MAIS//////////////////*/
 #mais
 {
     display: none;
-    max-height: 200px;
-    transition: max-height 1s ease-in-out;
 }
 
-.mais-transicao
-{
-    max-height: 0;
-    pointer-events: none;
-  }
-  
-.mais-transicao.hide
-{
-opacity: 0;
-pointer-events: none;
-}
 
 /*////////////////// GUIA MÉDICO //////////////////*/
 
@@ -509,22 +497,223 @@ pointer-events: none;
     line-height: 40px;
 }
 
-/*////////////////// Textos //////////////////*/
+@media screen and (max-width: 650px)
+{
 
-.textos-informativos
+    
+    .guia-para-gestantes > div
+    {
+        flex: 0.5
+        
+    }
+
+    .guia-para-gestantes > div > h1
+    {
+        font-size: 2rem;
+        color: #F06F06;
+        line-height: 30px;
+    }
+    
+}
+
+/*////////////////// Textos - Exames //////////////////*/
+
+.textos-exames
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
 }
 
-.textos-informativos > div
+.textos-exames > div
 {
-    flex: 0.8;
+    margin: 0px 80px 0px 80px;
 }
 
-.textos-informativos > div > h1
+
+.textos-exames > div > h1
 {
     color: #006EB6;
     font-size: 2rem;
+    padding-bottom: 10px;
 }
+
+.textos-exames > div > p
+{
+    color: #5F5F5F;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.textos-exames > div > div > p
+{
+    color: #5F5F5F;
+    margin: 20px 0px 20px 0px;
+    text-align: justify;
+}
+
+.textos-exames > div > div
+{
+    color: #5F5F5F;
+}
+
+
+.ponto-gatilho
+{
+    color:#006EB6;
+}
+
+.listas-cuidados
+{  
+    color: #006EB6;
+
+}
+
+.marcar-consulta
+{
+    background-color: #F06F06;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    border:none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-leiamais
+{
+    background-color: #006EB6;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    border:none;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*////////////////// Integrantes //////////////////*/
+
+.header-login
+{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(to right, #FAB216, #F06F06);
+    background-size: cover;
+    height: max-content;
+}
+
+.header-login > .logo-login
+{
+    padding: 50px;
+    justify-content: center;
+}
+
+.header-login > .logo-login > a > img
+{
+    width: 300px;
+    filter: brightness(0) invert(1);
+}
+
+/*////////////////// Integrantes - infos //////////////////*/
+
+.integrantes-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.integrantes-content > .diego-costa
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.3;
+    color: #006EB6;
+    padding-bottom: 30px;
+}
+
+.integrantes-content > .diego-costa > h2
+{
+    font: bold;
+    color: #F06F06;
+}
+.integrantes-content > .diego-costa > a
+{
+    font: bold;
+    color: #006EB6;
+}
+
+.integrantes-content > .diego-costa > img
+{
+    border-radius: 100%;
+    width: 200px;
+}
+
+.integrantes-content > .marcelo-mendes
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.3;
+    color: #006EB6;
+    padding-bottom: 30px;
+}
+
+.integrantes-content > .marcelo-mendes > img
+{
+    border-radius: 100%;
+    width: 200px;
+}
+
+.integrantes-content > .marcelo-mendes > h2
+{
+    font: bold;
+    color: #F06F06;
+}
+.integrantes-content > .marcelo-mendes > a
+{
+    font: bold;
+    color: #006EB6;
+}
+
+.integrantes-content > .lucas-minozzo
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.3;
+    color: #006EB6;
+    padding-bottom: 30px;
+}
+
+
+.integrantes-content > .lucas-minozzo > img
+{
+    border-radius: 100%;
+    width: 200px;
+}
+
+.integrantes-content > .lucas-minozzo > h2
+{
+    font: bold;
+    color: #F06F06;
+}
+.integrantes-content > .lucas-minozzo > a
+{
+    font: bold;
+    color: #006EB6;
+}
+
+@media screen and (max-width: 650px)
+{
+    .integrantes-content
+    {
+        flex-direction: column;
+        height: auto;
+        margin: 20px 0px 20px 0px;
+    }
+        
+}
+

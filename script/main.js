@@ -1,4 +1,4 @@
-function leiaMais()
+function leiaMaisexames()
 {
     var pontos= document.getElementById("pontos");
     var maisTexto = document.getElementById("mais");
@@ -17,3 +17,4 @@ function leiaMais()
 
     }
 }
+
