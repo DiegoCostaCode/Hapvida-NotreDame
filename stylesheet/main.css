@@ -456,3 +456,75 @@ body > footer > div > .itens-suporte > .canais-de-atendimento2
 opacity: 0;
 pointer-events: none;
 }
+
+/*////////////////// GUIA MÉDICO //////////////////*/
+
+
+/*////////////////// header //////////////////*/
+
+.guia-para-gestantes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+}
+
+.guia-para-gestantes > div
+{
+    flex: 0.8;
+}
+.guia-para-gestantes > div > h1
+{
+    font-size: 2rem;
+    color: #F06F06;
+    line-height: 30px;
+}
+
+
+.guia-para-gestantes > div > h2
+{
+    font-size: 2rem;
+    color: #006EB6;
+    width: 600px;
+}
+
+.faixa-gradiente
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to right, #FAB216, #F06F06);
+    background-size: cover;
+    box-shadow: 0px 0px 5px rgba(68, 65, 65, 0.5);
+    height: 200px;
+}
+
+
+.faixa-gradiente > div > h1
+{
+    color: white;
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+/*////////////////// Textos //////////////////*/
+
+.textos-informativos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textos-informativos > div
+{
+    flex: 0.8;
+}
+
+.textos-informativos > div > h1
+{
+    color: #006EB6;
+    font-size: 2rem;
+}

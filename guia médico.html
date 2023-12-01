@@ -1,49 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hapvida - NotreDame</title>
-    <link rel="stylesheet" href="stylesheet/main.css" />
-  </head>
 
-  <body>
-    <div>
-      <p class="conteudo-cortado" id="conteudo">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nemo
-        eum illum<span id="pontos">...</span
-        ><span id="mais" class="mais-transicao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          voluptatem consectetur, maiores ratione ipsum repellendus quos est
-          inventore expedita repellat tempore sit alias hic blanditiis
-          accusantium quia illo facere cum.
-          </span
-        >
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hapvida - NotreDame</title>
+  <link rel="stylesheet" href="stylesheet/main.css" />
+</head>
 
-      <button id="btnLeiaMais" onclick="leiaMais()">Leia mais</button>
+<body>
+
+  <header class="header-home">
+
+    <div class="logo-home">
+      <a href="index.html">
+        <img src="image/logo-hapvidaEnotredame.png">
+      </a>
     </div>
 
-    <footer>
-      <div>
-        <h1>Você tem dúvidas?</h1>
-        <p>
-          Estamos à disposição para tirar suas dúvidas. Entre em contato conosco
-          atráves dos canais de atendimento abaixo:
-        </p>
+    <div class="botoes-header">
 
-        <div class="itens-suporte">
-          <ul class="canais-de-atendimento">
-            <li>Tire dúvidas via Chat</li>
-            <li>Central de Ajuda</li>
-          </ul>
-          <ul class="canais-de-atendimento2">
-            <li>(xx) xxxx-xxxx</li>
-            <li>notredame.centralajuda@notredame.com.br</li>
-          </ul>
-        </div>
+      <div class="links-cabecalho">
+        <a role="button" href="guia médico.html">Guia Médico</a>
       </div>
-    </footer>
 
-    <script src="script/main.js"></script>
-  </body>
+      <div class="botao-login">
+        <a role="button" href="login.html">Login</a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <section class="guia-para-gestantes">
+    <div>
+
+      <h1>BEM-VINDA(O),</h1>
+      <h2>Este é um guia com dicas para sua grávidez, e seu recém-nascido.</h2>
+
+    </div>
+
+  </section>
+
+  <section class="faixa-gradiente">
+
+    <div>
+      <h1>Vamos ver os cuidados que você pode ter?</h1>
+    </div>
+
+  </section>
+
+  <nav class="textos-informativos">
+
+    <div>
+      <h1>Exame</h1>
+      <p class="conteudo-cortado" id="conteudo">
+        Gestante, ou apenas planejando sua grávidez, exames são importantes para verificar a sua saúde, pois gestantes
+        são um grupo de risco e precisam estar em ótimas condições para que tudo ocorra bem. <strong>Lembrando que não
+          precisa
+          perder suas preciosas noites de sono preocupada com o que pode ocorrer, se você seguir o pré-natal
+          corretamente,
+          tudo irá dar certo!</strong><br><br>Para isso serve o pré-natal, toda mamãe deve iniciar este acompanhamento
+        assim que descobre sua grávidez. Estes exames abaixo ajudam a verificar a sua sáude, e consequentemente a do
+        bebê. Veja:<br>
+        <span id="pontos">...</span>
+      </p>
+
+      <div id="mais" class="mais-transicao">
+
+        <lu>
+
+          <li>Exames de sangue;</li>
+          <li>Exames de urina;</li>
+          <li>Exames de fezes;</li>
+          <li>Exames de ginecológicos;</li>
+          <li>Ultrassom;</li>
+          <li>Triagem de estreptococo;</li>
+
+        </lu>
+
+        <p>Os exames listados são rápidos e fáceis de realizar atráves da nossa rede, aliás você consegue pegar os
+          resultados e já receber uma análise do médico virtualmente. Atráves dos mesmos é possível identificar
+          <strong>hipertensão, que posteriomente pode se tornar uma Pré-eclâmpsia</strong> - uma das principais causas de mortalidade
+          materna e perda,</p>
+
+          <button class="btnMarcarConsulta"> VISITAR O CLÍNICO GERAL</button>
+
+      </div>
+
+
+      <button id="btnLeiaMais" onclick="leiaMais()">Leia mais</button>
+      
+
+
+    </div>
+
+  </nav>
+
+  <footer>
+    <div>
+      <h1>Você tem dúvidas?</h1>
+      <p>
+        Estamos à disposição para tirar suas dúvidas. Entre em contato conosco
+        atráves dos canais de atendimento abaixo:
+      </p>
+
+      <div class="itens-suporte">
+        <ul class="canais-de-atendimento">
+          <li>Tire dúvidas via Chat</li>
+          <li>Central de Ajuda</li>
+        </ul>
+        <ul class="canais-de-atendimento2">
+          <li>(xx) xxxx-xxxx</li>
+          <li>notredame.centralajuda@notredame.com.br</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/main.js"></script>
+</body>
+
 </html>
